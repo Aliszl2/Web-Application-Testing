@@ -14,15 +14,15 @@
   border: 4px solid #aaaaaa;
 }
 
-.topRow {
+.orange{
   display: flex;
   justify-content: space-around;
   place-items: center;
   /* height: 20rem; */
 }
 
-.home,
-.away {
+.totalandscore
+{
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
   background-color: #af750a;
 }
 
-.home__name,
+
 
 .down__title,
 .toGo__title,
@@ -52,8 +52,8 @@
   padding: 2rem;
 }
 
-.home__score,
-.away__score {
+.score
+ {
   font-family: "Ozone";
   font-size: 7rem;
   width: 90%;
@@ -63,48 +63,8 @@
   padding: 5%;
 }
 
-.timer {
-  font-family: "Ozone";
-  font-size: 9rem;
-  padding: 2rem;
-  text-align: center;
-  background-color: var(--black);
-  border: 2px solid white;
-  border-radius: 6px;
-}
 
-.bottomRow {
-  display: flex;
-  justify-content: space-around;
-  place-items: center;
-  height: 20rem;
-}
 
-.down,
-.toGo,
-.ballOn,
-.quarter {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  place-items: center;
-}
-
-.down__value,
-.toGo__value,
-.ballOn__value,
-.quarter__value {
-  font-family: "Ozone";
-  font-size: 5rem;
-  color: var(--red);
-  width: 7rem;
-  text-align: center;
-  background-color: var(--black);
-  margin-top: 1rem;
-  border-radius: 4px;
-  padding: 1.6rem;
-  border: 1px solid white;
-}
 
 .buttons {
   width: 50%;
@@ -113,8 +73,9 @@
   justify-content: space-around;
 }
 
-.homeButtons__touchdown,
-.homeButtons__fieldGoal,
+.one,
+.ten,
+.hundred,
 .homeButtons__reset,
  {
   margin: 1rem;
