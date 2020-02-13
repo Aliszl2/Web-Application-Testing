@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Display from "./components/Display";
 import "./App.css";
 
+
 function App() {
   //state
   const [total, setTotal] = useState(0);
@@ -36,7 +37,7 @@ function App() {
   };
   return (
     <div>
-      <h1>Testing</h1>
+      <h1>Testing Title</h1>
       <Display
         total={total}
         setTotal={setTotal}

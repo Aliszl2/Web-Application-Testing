@@ -18,6 +18,7 @@ export default function Display({incrementBy1, incrementBy10, incrementBy100, re
       <section className="buttons">
         <button
           className="one"
+          data-testid="one"
           onClick={incrementBy1}
         >
           Increment by 1
