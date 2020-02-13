@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-export default function Display() {
-  const [total, setTotal] = useState(0);
+
+
+export default function Display({incrementBy1, incrementBy10, incrementBy100, reset, total, setTotal}) {
 
   return (
     // total display
@@ -17,32 +18,20 @@ export default function Display() {
       <section className="buttons">
         <button
           className="one"
-          onClick={() => {
-            if (total <= 50) {
-              setTotal(total + 1);
-            } else {
-              setTotal(0);
-            }
-          }}
+          onClick={incrementBy1}
         >
           Increment by 1
         </button>
         <button
           className="ten"
-          onClick={() => {
-            if (total <= 100000) {
-              setTotal(total + 10);
-            } else {
-              setTotal(0);
-            }
-          }}
+          onClick={incrementBy10}
         >
           Increment by 10
         </button>
-        <button className="ten" onClick={() => setTotal(total + 100)}>
+        <button className="ten" onClick={incrementBy100}>
           Increment by 100
         </button>
-        <button className="hundred" onClick={() => setTotal(0)}>
+        <button className="hundred" onClick={reset}>
           Reset
         </button>
         <br />
